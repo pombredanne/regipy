@@ -108,7 +108,7 @@ def registry_dump(hive_path, output_path, registry_path, timeline, hive_type, pa
 @click.option('-o', 'output_path', type=click.Path(exists=False, dir_okay=False, resolve_path=True), required=True,
               help='Output path for plugins result')
 @click.option('-p', '--plugins', type=click.STRING, required=False,
-              help='A plugin or list of plugins to execute command separated')
+              help='A plugin or a comma-separated list of plugins to execute.')
 @click.option('-t', '--hive-type', type=click.STRING, required=False,
               help='Specify a hive type, if it could not be identified for some reason')
 @click.option('-r', '--partial_hive_path', type=click.STRING, required=False,
